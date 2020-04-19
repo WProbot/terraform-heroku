@@ -21,15 +21,15 @@ resource "heroku_app" "staging" {
     ENVIRONMENT = "staging"
   }
 }
-# Create a redis, and configure the app to use it
+# Create a redis addon-on and configure the app to use it
 resource "heroku_addon" "redis-staging" {
   app  = heroku_app.staging.name
   plan = "heroku-redis:hobby-dev"
 }
-# Create a redis, and configure the app to use it
-resource "heroku_addon" "redis-production" {
-  app  = heroku_app.production.name
-  plan = "heroku-redis:hobby-dev"
+# Create a postgresql addon-on and configure the app to use it
+resource "heroku_addon" "postgresql-staging" {
+  app  = heroku_app.staging.name
+  plan = "heroku-postgresql:hobby-dev"
 }
 
 
