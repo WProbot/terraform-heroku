@@ -10,7 +10,7 @@ The following variables are used `app_name` and `app_region`.
 The two apps are provisioned, a staging app and a production app. The two apps are coupled together using a pipeline.
 
 ### Staging
-The staging app will be called `${var.app_name}-staging` and is made up of the following
+The staging app will be called `${var.app_name}-test` and is made up of the following
 - Add-ons
   - Heroku Redis (Hobby Dev - Free)
   - Heroku Postgres (Hobby Dev - Free)
@@ -20,7 +20,7 @@ The staging app will be called `${var.app_name}-staging` and is made up of the f
   - "heroku/python"
 
 ### Production
-The staging app will be called `${var.app_name}-production` and is made up of the following
+The staging app will be called `${var.app_name}-live` and is made up of the following
 - Add-ons
   - Heroku Redis (Premium 0 - $15/mo)
   - Heroku Postgres (Hobby Dev - $9/mo)
