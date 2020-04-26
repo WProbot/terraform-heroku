@@ -38,3 +38,6 @@ terraform init
 terraform apply -var "app_name=the-name-of-my-app" -var "app_region=eu"
 ```
 **Note** this configuration will provision add-ons that cost money.
+
+## License
+This project is licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
